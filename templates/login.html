@@ -1,0 +1,22 @@
+{% extends "starter.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+
+<div class="container-md main">
+
+    <div class="form-login">
+        <form action="/login_post" method="POST">
+            <div class="mb-3">
+                <label for="user-form" class="form-label">Username</label>
+                <input type="text" class="form-control" name="username" id="user-form">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+            </div>
+            <button id="button1" type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

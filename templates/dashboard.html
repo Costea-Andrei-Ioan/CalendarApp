@@ -1,0 +1,70 @@
+{% extends "starter.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="content-fluid dashboard">
+    <div class="content-md filter">
+        <h1>Tips for freshmen</h1>
+    </div>
+
+    <div class="container-md">
+        <div id="motivational" class="row">
+            <div class="overflow-scroll motivational-scroll" style="max-height: 25rem;">
+                {% for i in advices: %}
+                    <div class="card motivational-content">
+                        <h5>{{ i[1] }}</h5>
+                        <p>{{ i[2] }}</p>
+                        <footer class="blockquote-footer"><cite title="Source Title">{{ i[3] }}</cite></footer>
+                    </div>
+                {% endfor %}
+                <div class="card motivational-content">
+                    <h5>MOTIVATIONAL</h5>
+                    <p>A high school acting group is a vibrant and creative collective of students passionate about theater and performance. These young actors work together to develop their skills in acting, stage presence, and teamwork. They often participate in school plays, musicals, and drama competitions, bringing stories to life with enthusiasm and dedication. Through rehearsals and performances, they learn the intricacies of character development, script interpretation, and stagecraft. The experience fosters not only artistic growth but also personal development, enhancing confidence, communication skills, and collaboration. For many, the high school acting group is a cherished space for creative expression and lasting friendships.</p>
+                </div>
+                <div class="card motivational-content">
+                    <h5>MOTIVATIONAL</h5>
+                    <p>A high school acting group is a vibrant and creative collective of students passionate about theater and performance. These young actors work together to develop their skills in acting, stage presence, and teamwork. They often participate in school plays, musicals, and drama competitions, bringing stories to life with enthusiasm and dedication. Through rehearsals and performances, they learn the intricacies of character development, script interpretation, and stagecraft. The experience fosters not only artistic growth but also personal development, enhancing confidence, communication skills, and collaboration. For many, the high school acting group is a cherished space for creative expression and lasting friendships.</p>
+                </div>
+                <div class="card motivational-content">
+                    <h5>MOTIVATIONAL</h5>
+                    <p>A high school acting group is a vibrant and creative collective of students passionate about theater and performance. These young actors work together to develop their skills in acting, stage presence, and teamwork. They often participate in school plays, musicals, and drama competitions, bringing stories to life with enthusiasm and dedication. Through rehearsals and performances, they learn the intricacies of character development, script interpretation, and stagecraft. The experience fosters not only artistic growth but also personal development, enhancing confidence, communication skills, and collaboration. For many, the high school acting group is a cherished space for creative expression and lasting friendships.</p>
+                </div>
+                <div class="card motivational-content">
+                    <h5>MOTIVATIONAL</h5>
+                    <p>A high school acting group is a vibrant and creative collective of students passionate about theater and performance. These young actors work together to develop their skills in acting, stage presence, and teamwork. They often participate in school plays, musicals, and drama competitions, bringing stories to life with enthusiasm and dedication. Through rehearsals and performances, they learn the intricacies of character development, script interpretation, and stagecraft. The experience fosters not only artistic growth but also personal development, enhancing confidence, communication skills, and collaboration. For many, the high school acting group is a cherished space for creative expression and lasting friendships.</p>
+                </div>
+                <div class="card motivational-content">
+                    <h5>MOTIVATIONAL</h5>
+                    <p>A high school acting group is a vibrant and creative collective of students passionate about theater and performance. These young actors work together to develop their skills in acting, stage presence, and teamwork. They often participate in school plays, musicals, and drama competitions, bringing stories to life with enthusiasm and dedication. Through rehearsals and performances, they learn the intricacies of character development, script interpretation, and stagecraft. The experience fosters not only artistic growth but also personal development, enhancing confidence, communication skills, and collaboration. For many, the high school acting group is a cherished space for creative expression and lasting friendships.</p>
+                </div>
+                <div class="card motivational-content">
+                    <h5>MOTIVATIONAL</h5>
+                    <p>A high school acting group is a vibrant and creative collective of students passionate about theater and performance. These young actors work together to develop their skills in acting, stage presence, and teamwork. They often participate in school plays, musicals, and drama competitions, bringing stories to life with enthusiasm and dedication. Through rehearsals and performances, they learn the intricacies of character development, script interpretation, and stagecraft. The experience fosters not only artistic growth but also personal development, enhancing confidence, communication skills, and collaboration. For many, the high school acting group is a cherished space for creative expression and lasting friendships.</p>
+                </div>
+                <div class="card motivational-content">
+                    <h5>MOTIVATIONAL</h5>
+                    <p>A high school acting group is a vibrant and creative collective of students passionate about theater and performance. These young actors work together to develop their skills in acting, stage presence, and teamwork. They often participate in school plays, musicals, and drama competitions, bringing stories to life with enthusiasm and dedication. Through rehearsals and performances, they learn the intricacies of character development, script interpretation, and stagecraft. The experience fosters not only artistic growth but also personal development, enhancing confidence, communication skills, and collaboration. For many, the high school acting group is a cherished space for creative expression and lasting friendships.</p>
+                </div>
+            </div>
+            <div class="container motivation-container">
+                <div class="card motivation-form">
+                    <div class="card-title">
+                        <h3>Write an advice</h3>
+                    </div>
+                    <form action="/advice_post" method="POST">
+                      <div class="mb-3">
+                        <label for="titleInput" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="titleInput" name="title">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

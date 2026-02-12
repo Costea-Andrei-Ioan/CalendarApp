@@ -1,0 +1,45 @@
+{% extends "starter.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+<div class="container-md main">
+    <div id="title-home" class="container-md">
+        <img src="{{url_for('static', filename='img/logo_vianu.png')}}" class="img-fluid" alt="National College of Computer Science Tudor Vianu">
+    </div>
+
+    {% if session["loggedin"]: %}
+        <h4>Hi, {{session["username"]}}</h4>
+    {% endif %}
+
+    <div id="content-home" class="container-md">
+        <div class="row justify-content-between">
+            <div class="card" style="width: 18rem;">
+                <img src="{{url_for('static', filename='img/vianu_trupa.png')}}" class="card-img-top" alt="acting group">
+                <div class="card-body">
+                    <h5 class="card-title">Vianu Acting Group</h5>
+                    <p class="card-text">Vianu high school acting group is a vibrant and creative collective of students passionate about theater and performance.</p>
+                    <a href="/calendar" class="btn btn-primary">Next event</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{url_for('static', filename='img/vianu_campioni.png')}}" class="card-img-top" alt="Champions">
+                <div class="card-body">
+                    <h5 class="card-title">Champions</h5>
+                    <p class="card-text">The National College of Computer Science "Tudor Vianu" is renowned for fostering champions in the field of computer science and beyond.</p>
+                    <a href="https://portal.lbi.ro/" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{url_for('static', filename='img/vianu_sat.png')}}" class="card-img-top" alt="SAT">
+                <div class="card-body">
+                    <h5 class="card-title">SAT</h5>
+                    <p class="card-text">Preparing for the SAT Math section involves reviewing a variety of topics across algebra, geometry, and data analysis.</p>
+                    <a href="/calendar" class="btn btn-primary">Next event</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

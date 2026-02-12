@@ -1,0 +1,14 @@
+{
+  "validation file": {
+    "name": "sample1.xlsx",
+    "max_rows": 1024,
+    "sheet": "Data",
+    "headers": {
+      "f1": "Year",
+      "f2": "Month",
+      "f3": "Price",
+      "f4": "Quantity",
+      "f5": "Amount"
+    }
+  }
+}

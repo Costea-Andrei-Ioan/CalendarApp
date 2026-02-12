@@ -1,0 +1,107 @@
+body{
+    font-size: medium;
+    font-family: Calibri;
+}
+
+nav{
+    background-color: #4472c4;
+}
+
+.main{
+    padding: 2.5vw;
+    background-color: #deebf7;
+}
+
+.form-content{
+    padding: 2.5vw;
+}
+
+.form-login{
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-right: 20vw;
+    padding-left: 20vw;
+}
+
+.validating-content{
+    padding: 2.5vw;
+}
+
+.navbar-style{
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+}
+
+.dashboard{
+  padding: 2.5vw;
+}
+
+.filter{
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
+.label-button {
+    background-color: #4472c4;
+    color: white;
+    padding: .55rem .75rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#file-chosen{
+    background-color: white;
+    border: 1px solid #4472c4;
+    padding: .55rem .75rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-left: .375rem .75rem;
+}
+
+#button1{
+    background-color: #4472c4;
+}
+
+#button_div{
+    margin-left: auto;
+    margin-top: auto
+}
+
+.ok{
+    color: green;
+}
+
+.not_ok{
+    color: red;
+}
+
+#title-home{
+    text-align: center;
+    padding: 2.5rem
+}
+
+#content-home{
+    padding: 2.5rem
+}
+
+#motivational{
+    padding: 2.5rem
+}
+
+.motivational-content{
+    text-align: justify;
+    padding: .75rem
+}
+
+.motivation-form{
+    padding: 3rem
+}
+
+.motivational-scroll{
+    padding: 2.5rem
+}
+
+.motivation-container{
+    padding: 2.5rem
+}
