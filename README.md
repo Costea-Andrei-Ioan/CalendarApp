@@ -24,5 +24,6 @@ The design is made with a prebuild template
 
 ## How to run
 Make sure to configure the database credentials and name in the main.py file.
+Run db.sql in your SQL editor.
 
 python ./main.py
